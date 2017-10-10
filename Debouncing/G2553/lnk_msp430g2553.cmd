@@ -44,7 +44,7 @@
 /* -heap   0x0100                                   HEAP AREA SIZE            */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-/* Version: 1.201                                                             */
+/* Version: 1.200                                                             */
 /*----------------------------------------------------------------------------*/
 
 /****************************************************************************/
@@ -106,7 +106,7 @@ SECTIONS
     .mspabi.extab : {} > FLASH              /* C++ Constructor tables            */
 #ifdef __TI_COMPILER_VERSION__
   #if __TI_COMPILER_VERSION__ >= 15009000
-    #ifndef __LARGE_CODE_MODEL__
+    #ifndef __LARGE_DATA_MODEL__
     .TI.ramfunc : {} load=FLASH, run=RAM, table(BINIT)
     #else
     .TI.ramfunc : {} load=FLASH | FLASH2, run=RAM, table(BINIT)
