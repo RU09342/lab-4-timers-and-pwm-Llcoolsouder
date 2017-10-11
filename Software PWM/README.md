@@ -88,6 +88,10 @@ Once again, the code above does not do anything that hasn't been done in previou
 5. When TA0CCR1 triggers an interrupt, the LED toggles.
 6. When the button is pushed, the value of TA0CCR1 is incremented by 50, thus increasing duty cycle by 10%. When duty cycle reaches 100%, it is reset to 0.
 
+The resultant waveform is shown below.
+![PWM Scope 1](https://github.com/RU09342/lab-4-timers-and-pwm-Llcoolsouder/blob/master/Software%20PWM/scope_PWM1.png)
+![PWM Scope 2](https://github.com/RU09342/lab-4-timers-and-pwm-Llcoolsouder/blob/master/Software%20PWM/scope_PWM2.png)
+
 ## Duty Cycle
 A PWM signal has two properties: _frequency_ and _duty cycle_. Frequency is simply the inverse of the time it takes for a full period of the wave. Duty cycle is what percentage of the period that the signal is HIGH. The general formula for duty cycle is given by:
 <p align="center">
